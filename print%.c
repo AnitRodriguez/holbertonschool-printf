@@ -1,4 +1,4 @@
-#include "stdlib.h"
+#include "main.h"
 int print%(va_list P) 
 {
 	(void)P; 

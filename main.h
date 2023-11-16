@@ -8,7 +8,7 @@
 
 typedef struct sh
 {
-	char *sh;
+	char *c;
 	int (*f)(va_list <nombre lista/>);
 } sh_t;
 

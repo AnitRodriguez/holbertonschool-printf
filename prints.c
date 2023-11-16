@@ -2,11 +2,14 @@
 
 int print_string(va_list list)
 {
-	char *p;
-	int p_l;
+	int j;
+	char *str = va_arg(list, char *);
 
-	p = va_arg(list, char*);
-	p_l = print((p != NULL) ? p : "(null)";
-
-	return (p_l);
+	if (str == NULL)
+		str = "(null)";
+	for (j = 0; str[j]; j++)
+	{
+		_putchar(str[j]);
+	}
+	return (j);
 }

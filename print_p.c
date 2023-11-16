@@ -3,7 +3,7 @@
  *
  *
  */
-int print%(va_list P) 
+int print_percent(va_list P) 
 {
 	(void)P; 
 	_putchar('%');

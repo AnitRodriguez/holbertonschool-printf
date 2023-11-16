@@ -9,7 +9,11 @@
 typedef struct sh
 {
 	char *c;
+<<<<<<< HEAD
 	int (*f)(va_list args);
+=======
+	int (*f)(va_list <nombre lista/>);
+>>>>>>> e4babe44659fca9ea7334ccb2073603316a8790e
 } sh_t;
 
 int _putchar(char c);

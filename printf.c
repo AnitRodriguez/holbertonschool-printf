@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * _printf - Print to output according to format.
+ * @format: Character string.
+ *
+ * Return: Number of Character printef.
+ */
+
 int _printf(const char *format, ...)
 {
 	int i = 0, j = 0;

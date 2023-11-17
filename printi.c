@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * print_integer - Print a decimal.
+ * @args: The argument decimal.
+ *
+ * Return: Return always the result of l.
+ */
+
 int print_integer(va_list args)
 {
 	int val;

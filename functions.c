@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
+ * functions - Check for a valid specifier.
+ * @format: Character to check.
  *
- *
- *
+ * Return: Pointer to the function.
  */
 
 int (*functions(const char *format))(va_list)

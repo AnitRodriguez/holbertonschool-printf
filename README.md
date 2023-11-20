@@ -1,69 +1,56 @@
- - printf
 
-Background Context
-Write your own printf function.
-
-Requirements
-General
-Allowed editors: vi, vim, emacs
-All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
-All your files should end with a new line
-A README.md file, at the root of the folder of the project is mandatory
-Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
-You are not allowed to use global variables
-No more than 5 functions per file
-In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation; do not push your own main.c file. Our main.c files might be different from the one shown in the examples
-The prototypes of all your functions should be included in your header file called main.h
-Don’t forget to push your header file
-All your header files should be include guarded
-Note that we will not provide the _putchar function for this project
+# _printf
+A formatted output conversion C program completed as part of the low-level programming and algorithm track at Holberton School. The program is a pseudo- recreation of the C standard library function, printf.
 
 
-More Info
-Authorized functions and macros
-write (man 2 write)
-malloc (man 3 malloc)
-free (man 3 free)
-va_start (man 3 va_start)
-va_end (man 3 va_end)
-va_copy (man 3 va_copy)
-va_arg (man 3 va_arg)
+
+## Dependencies
+The _printf function was coded on an Ubuntu 20.04.4 LTS
+## Useage
+To use the _printf function, assuming the above dependencies have been installed, compile all .c files in the repository and include the header main.h with any main function.
+
+## Description
+int _printf(const char *format, ...)
+
+This function produces output under the control of a format string that specifies how subsequent arguments (or arguments accessed via the variable-length argument of stdarg are converted for output.
+
+The format string is composed of zero or more directives:
+
+* Ordinary characters that are copied unchanged to the output stream. (except %)
+* Conversion specifications, each of which results in fetching zero or more subsequent arguments. Each conversion specification starts with the character %, ends with a conversion specifier ( which is a letter).
+
+The conversion specifier:
+
+The conversion specifier is a letter that specifies the type of conversion to be applied. Our program includes the following conversion specifiers:
+
+d: decimal number to be provided for printing.
+
+i: integer to be provided for printing
+
+c: character to be provided for printing
+
+s: ...The const char * argument is expected to be a pointer to an array of character type (pointer to a string).
+
+%: A per cent sign '%' is written. No argument is converted.
+
+Return value:
+
+Upon success, _printf return the number of characters printed (excluding the null byte used to end output to strings) A negative 1 is returned if an output error is encountered.
 
 
-	Tasks
-0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
-mandatory
-Write a function that produces output according to a format.
+### int (*functions(const char *format))(va_list)
+His function called by _printf() and checks for valid conversion specifier when it finds a '%' character. The *functions function will check for the right conversion specifier. Upon valid specifier, it returns the corresponding function.
+### int print_char(va_list list)
+This function gets a variadic argument and prints each character of char type.
+### int print_string(va_list list)
+This function gets a variadic argument, traverse the string, and prints a character at a time.
+### int print_percent(va_list P)
+This function prints a percent sign '%'.
 
-Prototype: int _printf(const char *format, ...);
-Returns: the number of characters printed (excluding the null byte used to end output to strings)
-write output to stdout, the standard output stream
-format is a character string. The format string is composed of zero or more directives. See man 3 printf for more detail. You need to handle the following conversion specifiers:
-c
-s
-%
-You don’t have to reproduce the buffer handling of the C library printf function
-You don’t have to handle the flag characters
-You don’t have to handle field width
-You don’t have to handle precision
-You don’t have to handle the length modifiers
+### int _putchar(char c)
+Writes the character c to standard output.
+## Authors
 
+- [Eithan Tabarez](https://www.github.com/Eithan-Tabarez)
 
-1. Education is when you read the fine print. Experience is what you get if you don't
-mandatory
-Handle the following conversion specifiers:
-
-d
-i
-You don’t have to handle the flag characters
-You don’t have to handle field width
-You don’t have to handle precision
-You don’t have to handle the length modifiers
-Repo:
-
-GitHub repository: holbertonschool-printf
-
-
-2. Just because it's in print doesn't mean it's the gospel
-mandatory
-Create a man page for your function.
+- [Anit Rodriguez](https://github.com/AnitRodriguez)

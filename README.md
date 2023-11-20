@@ -58,4 +58,3 @@ Writes the character c to standard output.
 
 - [Eithan Tabarez](https://www.github.com/Eithan-Tabarez)
 
-- [Anit Rodriguez](https://github.com/AnitRodriguez)

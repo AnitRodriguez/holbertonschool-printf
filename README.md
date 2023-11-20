@@ -51,7 +51,8 @@ This function prints a percent sign '%'.
 Writes the character c to standard output.
 
 ## Flowchart
-![Flowchart](https://ibb.co/mqSGHzh)
+![Flowchart](https://iili.io/JnSnVPR.jpg)
+
 
 ## Authors
 

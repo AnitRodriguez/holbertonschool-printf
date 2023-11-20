@@ -49,6 +49,10 @@ This function prints a percent sign '%'.
 
 ### int _putchar(char c)
 Writes the character c to standard output.
+
+## Flowchart
+![Flowchart](https://ibb.co/mqSGHzh)
+
 ## Authors
 
 - [Eithan Tabarez](https://www.github.com/Eithan-Tabarez)
